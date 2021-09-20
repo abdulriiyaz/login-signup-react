@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    body{
+        @apply lg:overflow-hidden md:overflow-hidden  m-0 p-0 
+    }
+}
