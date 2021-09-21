@@ -1,11 +1,10 @@
-
-import Signup from './components/Signup'
+import Signup from "./components/Signup";
+// import Signup from './components/Signup'
 
 const App = () => {
-    var all = []
-    return (
-        <Signup/>
-    );
-}
+  return <>
+    <Signup />
+  </>;
+};
 
-export default App
+export default App;

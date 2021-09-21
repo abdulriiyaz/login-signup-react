@@ -3,11 +3,9 @@ import img from "../sg.jpg";
 import { useState } from "react";
 import Allusers from "./Allusers";
 
-const Login = ({all}) => {
+const Login = ({ all, setLogin }) => {
   const [nameLog, setNameLog] = useState(" ");
   const [passwordLog, setPasswordLog] = useState(" ");
-
-  var all_users_email = [];
 
   const [home, setHome] = useState(true);
 
@@ -16,18 +14,15 @@ const Login = ({all}) => {
 
     all = JSON.parse(localStorage.getItem("users"));
     console.log(all);
-    for (var i = 0; i < all.length; i++) {
-      all_users_email = all[i].email;
-    }
 
     const hash = Object.fromEntries(all.map((e) => [e.email, e.password]));
 
     for (let [key, val] of Object.entries(hash)) {
       if (key === nameLog && val === passwordLog) {
-        alert("success")
-        setHome(!home)
+        //alert("success");
+        setHome(!home);
       } else {
-        alert("Failed")
+        alert("Failed");
       }
     }
   }
@@ -35,7 +30,7 @@ const Login = ({all}) => {
   return (
     <>
       {!home ? (
-        <Allusers all_users={all_users_email}/>
+        <Allusers/>
       ) : (
         <div className="flex flex-col md:flex-row w-full">
           {/* sideground */}
