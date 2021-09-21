@@ -39,7 +39,7 @@ const Login = ({ all, setLogin }) => {
               loading="lazy"
               className="object-cover h-60 md:h-screen md:w-full w-full"
               src={img}
-              alt="Welcome!"
+              alt="Login"
             />
           </div>
           {/* //login */}
