@@ -1,5 +1,7 @@
 # A login and Signup portal with Local Storage, web storage API.
 
+![All Users](/assets/images/3.png "All Users")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
