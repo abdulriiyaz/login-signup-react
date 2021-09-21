@@ -1,5 +1,12 @@
 # A login and Signup portal with Local Storage, web storage API.
 
+## Login Page
+![Login](/assets/images/1.png "Login")
+
+## Signup Page
+![Signup](/assets/images/2.png "Signup")
+
+## All Users Page
 ![All Users](/assets/images/3.png "All Users")
 
 # Getting Started with Create React App
